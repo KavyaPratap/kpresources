@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML & CSS Learning</title>
+    <title>HTML & CSS Learning Hub - Dark Edition</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
@@ -11,20 +11,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <header>
-    <div class="logo"><i class="fas fa-laptop-code"></i> <h1>HTML & CSS Hub</h1></div>
-    <p class="subtitle">Complete Reference Guidee</p>
-</header>
+    <header>
+        <div class="logo">
+            <i class="fas fa-laptop-code"></i>
+            <h1>HTML & CSS Learning</h1>
+        </div>
+        <p class="subtitle">A comprehensive platform to master web development fundamentals with detailed tutorials, interactive examples, and extensive learning resources.</p>
+    </header>
 
 <div class="container">
     <div class="tabs">
-        <div class="tab html-tab active" data-tab="html">HTML (112 Tags)</div>
-        <div class="tab css-tab" data-tab="css">CSS Mastery (100+ Props)</div>
+        <div class="tab html-tab active" data-tab="html"><i class="fab fa-html5"></i> HTML Mastery</div>
+        <div class="tab css-tab" data-tab="css"><i class="fab fa-css3-alt"></i> CSS Mastery</div>
     </div>
+        
+         <div id="html-content" class="tab-content active">
+            <div class="section">
+                <h2 class="section-title"><i class="fas fa-medal"></i> HTML Best Practices & Guidelines</h2>
+                <div class="practices-list">
+                    <div class="practice-card">
+                        <h3><i class="fas fa-code"></i> Semantic HTML Structure</h3>
+                        <p>Always use semantic HTML5 elements like &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;, and &lt;footer&gt;. This improves accessibility, SEO, and makes your code more readable and maintainable.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-file-code"></i> Proper Document Structure</h3>
+                        <p>Always include &lt;!DOCTYPE html&gt; declaration at the beginning. Use UTF-8 character encoding with &lt;meta charset="UTF-8"&gt;. Include viewport meta tag for responsive design: &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-universal-access"></i> Web Accessibility (A11y)</h3>
+                        <p>Include alt attributes for all images, use ARIA labels when needed, ensure proper heading hierarchy (h1-h6), provide text alternatives for non-text content, and ensure keyboard navigability for all interactive elements.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-check-circle"></i> Valid & Clean Code</h3>
+                        <p>Always validate your HTML using W3C Validator. Use consistent indentation (2 or 4 spaces). Close all tags properly. Use lowercase for element names and attribute values. Quote all attribute values.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-tachometer-alt"></i> Performance Optimization</h3>
+                        <p>Minimize DOM size, defer non-critical JavaScript, use lazy loading for images, optimize images before embedding, use appropriate image formats (WebP, AVIF for modern browsers), and minimize HTTP requests.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-mobile-alt"></i> Responsive Design Fundamentals</h3>
+                        <p>Use relative units (%, em, rem) instead of fixed pixels for widths and fonts. Implement responsive images with srcset and sizes attributes. Use the picture element for art direction. Test on multiple screen sizes.</p>
+                    </div>
+                </div>
+            </div>
 
-    <div id="html-content" class="tab-content active">
         <div class="section">
-            <h2 class="section-title">Complete HTML5 Tag Reference</h2>
+            <h2 class="section-title"><i class="fas fa-table"></i> Complete HTML5 Tag Reference</h2>
             <div class="search-container">
                 <input type="text" id="tagSearch" placeholder="🔍 Search HTML tags (e.g., 'table', 'video')...">
             </div>
@@ -37,6 +70,41 @@
             <p style="margin-top:10px; opacity:0.7; font-style:italic;">*Click any tag above to see code & preview.</p>
         </div>
 
+       <div class="section">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Comprehensive HTML Learning Resources</h2>
+                <div class="resources-list">
+                    <div class="resource-card">
+                        <h3>MDN Web Docs - HTML</h3>
+                        <p>The most comprehensive and authoritative resource for HTML documentation, tutorials, and references maintained by Mozilla. Covers everything from basic syntax to advanced APIs.</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="resource-link">Explore MDN HTML Guide <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>HTML Living Standard</h3>
+                        <p>The official HTML specification maintained by the Web Hypertext Application Technology Working Group (WHATWG). This is the definitive reference for HTML features and behavior.</p>
+                        <a href="https://html.spec.whatwg.org/" target="_blank" class="resource-link">Read HTML Standard <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>freeCodeCamp - Responsive Web Design</h3>
+                        <p>Free interactive learning platform with 300+ hours of curriculum, projects, and certifications for HTML, CSS, and responsive web design. Includes hands-on coding challenges.</p>
+                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" class="resource-link">Start freeCodeCamp Course <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Web.dev - Learn HTML</h3>
+                        <p>Google's modern resource for web development learning. Covers HTML fundamentals with a focus on modern best practices, performance, and accessibility.</p>
+                        <a href="https://web.dev/learn/html" target="_blank" class="resource-link">Visit Web.dev HTML Course <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>HTML.com Beginner's Guide</h3>
+                        <p>Excellent beginner-friendly tutorials with practical examples. Perfect for those starting from scratch, with step-by-step instructions and visual examples.</p>
+                        <a href="https://html.com/" target="_blank" class="resource-link">Check HTML.com Tutorials <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Codecademy - Learn HTML</h3>
+                        <p>Interactive coding platform with structured HTML courses. Includes quizzes, projects, and a professional certification path for web development.</p>
+                        <a href="https://www.codecademy.com/learn/learn-html" target="_blank" class="resource-link">Try Codecademy Course <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
         <div class="section">
             <h2 class="section-title"><i class="fas fa-comment-dots"></i> HTML Viva Voce (40 Questions)</h2>
             <div class="questions-list">
@@ -83,10 +151,38 @@
             </div>
         </div>
     </div>
-
     <div id="css-content" class="tab-content">
         <div class="section">
-            <h2 class="section-title">Complete CSS Properties Reference</h2>
+                <h2 class="section-title"><i class="fas fa-medal"></i> CSS Best Practices & Guidelines</h2>
+                <div class="practices-list">
+                    <div class="practice-card">
+                        <h3><i class="fas fa-file-code"></i> External Stylesheets & Organization</h3>
+                        <p>Always use external CSS files for better maintainability, caching, and separation of concerns. Organize CSS with logical sections (reset, variables, base styles, components, utilities).</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-mobile-alt"></i> Mobile-First Responsive Design</h3>
+                        <p>Start with mobile styles and use min-width media queries to add styles for larger screens. This ensures better performance on mobile and progressive enhancement.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-tachometer-alt"></i> Performance Optimization</h3>
+                        <p>Minify CSS for production, use efficient selectors, avoid overly complex rules, reduce repaints and reflows, use CSS containment, and leverage browser caching.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-palette"></i> CSS Variables & Custom Properties</h3>
+                        <p>Use CSS custom properties for colors, fonts, spacing, and other values to maintain consistency and make global changes easier: --primary-color: #6c63ff;</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-universal-access"></i> Accessibility in CSS</h3>
+                        <p>Ensure sufficient color contrast (4.5:1 for normal text), maintain focus visibility, use relative units for font sizes, and avoid hiding content in non-accessible ways.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h3><i class="fas fa-layer-group"></i> BEM Naming Convention</h3>
+                        <p>Use Block-Element-Modifier methodology for scalable and maintainable CSS: .block {}, .block__element {}, .block--modifier {}. This avoids specificity issues and improves readability.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-magic"></i> CSS Properties Reference</h2>
             <div class="search-container">
                 <input type="text" id="cssSearch" placeholder="🔍 Search CSS properties (e.g., 'flex', 'grid')...">
             </div>
@@ -98,6 +194,26 @@
             </div>
             <p style="margin-top:10px; opacity:0.7; font-style:italic;">*Click any property above to see code & demo.</p>
         </div>
+         <div class="section">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Comprehensive CSS Learning Resources</h2>
+                <div class="resources-list">
+                    <div class="resource-card">
+                        <h3>MDN Web Docs - CSS</h3>
+                        <p>Complete CSS reference with tutorials, guides, and examples. Covers everything from basic selectors to advanced layout techniques like Grid and Flexbox.</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="resource-link">Explore MDN CSS Guide <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>CSS-Tricks</h3>
+                        <p>Extensive collection of CSS tutorials, guides, and reference materials with practical examples and modern techniques. Famous for its "Complete Guide to Flexbox" and "Grid" articles.</p>
+                        <a href="https://css-tricks.com/" target="_blank" class="resource-link">Visit CSS-Tricks <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="resource-card">
+                        <h3>Flexbox Froggy & Grid Garden</h3>
+                        <p>Interactive games that teach CSS Flexbox and Grid through fun, engaging challenges and puzzles. Perfect for visual learners who want to master modern CSS layouts.</p>
+                        <a href="https://flexboxfroggy.com/" target="_blank" class="resource-link">Play Flexbox Froggy <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
 
         <div class="section">
             <h2 class="section-title"><i class="fas fa-comment-dots"></i> CSS Viva Voce (40 Questions)</h2>
@@ -163,7 +279,6 @@
         </div>
     </div>
 </div>
-
     <footer>
         <div class="footer-content">
             <h3>HTML & CSS Learning - By KP</h3>
@@ -174,5 +289,7 @@
 
 <script src="script.js"></script>
 </body>
-
 </html>
+
+
+
