@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Learning Hub - Dark Edition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <div class="logo"><i class="fas fa-laptop-code"></i> <h1>HTML & CSS Hub</h1></div>
+    <p class="subtitle">Complete Reference Guidee</p>
+</header>
+
+<div class="container">
+    <div class="tabs">
+        <div class="tab html-tab active" data-tab="html">HTML (112 Tags)</div>
+        <div class="tab css-tab" data-tab="css">CSS Mastery (100+ Props)</div>
+    </div>
+
+    <div id="html-content" class="tab-content active">
+        <div class="section">
+            <h2 class="section-title">Complete HTML5 Tag Reference</h2>
+            <div class="search-container">
+                <input type="text" id="tagSearch" placeholder="🔍 Search HTML tags (e.g., 'table', 'video')...">
+            </div>
+            <div class="code-table-container">
+                <table class="code-table">
+                    <thead><tr><th>Tag</th><th>Description</th><th>Type</th></tr></thead>
+                    <tbody id="htmlTableBody"></tbody>
+                </table>
+            </div>
+            <p style="margin-top:10px; opacity:0.7; font-style:italic;">*Click any tag above to see code & preview.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-comment-dots"></i> HTML Viva Voce (40 Questions)</h2>
+            <div class="questions-list">
+                <div class="question"><h3>1. What does &lt;!DOCTYPE html&gt; do?</h3><p>Tells the browser to render in Standard Mode (HTML5) instead of Quirks Mode.</p></div>
+                <div class="question"><h3>2. Semantic vs Non-Semantic?</h3><p>Semantic elements (&lt;header&gt;) describe meaning. Non-semantic (&lt;div&gt;) do not.</p></div>
+                <div class="question"><h3>3. Block vs Inline?</h3><p>Block starts on new line (full width). Inline stays on same line (content width).</p></div>
+                <div class="question"><h3>4. Void Elements?</h3><p>Tags with no closing tag and no content (e.g., &lt;img&gt;, &lt;br&gt;, &lt;hr&gt;).</p></div>
+                <div class="question"><h3>5. ID vs Class?</h3><p>ID is unique per page. Class can be reused on multiple elements.</p></div>
+                <div class="question"><h3>6. What is the &lt;head&gt; tag?</h3><p>Container for metadata (title, styles, scripts) not shown in viewport.</p></div>
+                <div class="question"><h3>7. What is &lt;meta charset="UTF-8"&gt;?</h3><p>Sets character encoding to UTF-8 to support all human languages/symbols.</p></div>
+                <div class="question"><h3>8. Global Attributes?</h3><p>Attributes valid on any tag: id, class, style, title, hidden, tabindex.</p></div>
+                <div class="question"><h3>9. GET vs POST?</h3><p>GET retrieves data (in URL). POST submits data (in body, secure).</p></div>
+                <div class="question"><h3>10. &lt;label&gt; tag purpose?</h3><p>Improves accessibility; clicking label focuses the linked input.</p></div>
+                <div class="question"><h3>11. HTML5 Data Attributes?</h3><p>Store custom data (data-*) accessible via JS dataset API.</p></div>
+                <div class="question"><h3>12. What is &lt;fieldset&gt;?</h3><p>Groups related elements in a form, used with &lt;legend&gt;.</p></div>
+                <div class="question"><h3>13. src vs href?</h3><p>src embeds resource (img/script). href links to resource (anchor/css).</p></div>
+                <div class="question"><h3>14. alt attribute importance?</h3><p>Critical for Screen Readers (accessibility) and SEO.</p></div>
+                <div class="question"><h3>15. Canvas vs SVG?</h3><p>Canvas is raster (pixels, JS drawn). SVG is vector (XML, scalable).</p></div>
+                <div class="question"><h3>16. What is &lt;picture&gt;?</h3><p>Allows art direction (different images for different screens).</p></div>
+                <div class="question"><h3>17. async vs defer?</h3><p>Async runs immediately (pauses HTML). Defer runs after HTML parsing.</p></div>
+                <div class="question"><h3>18. Local vs Session Storage?</h3><p>Local persists forever. Session clears when tab closes.</p></div>
+                <div class="question"><h3>19. What is &lt;iframe&gt;?</h3><p>Embeds another HTML page within the current page.</p></div>
+                <div class="question"><h3>20. Viewport Meta Tag?</h3><p>Controls layout on mobile (width=device-width).</p></div>
+                <div class="question"><h3>21. &lt;strong&gt; vs &lt;b&gt;?</h3><p>Strong is semantic importance. B is just visual bold.</p></div>
+                <div class="question"><h3>22. &lt;em&gt; vs &lt;i&gt;?</h3><p>Em is semantic emphasis. I is just visual italic.</p></div>
+                <div class="question"><h3>23. What is &lt;noscript&gt;?</h3><p>Content displayed only if JS is disabled.</p></div>
+                <div class="question"><h3>24. download attribute?</h3><p>Prompts browser to download the link instead of navigating.</p></div>
+                <div class="question"><h3>25. &lt;details&gt; tag?</h3><p>Native accordion widget with expand/collapse capability.</p></div>
+                <div class="question"><h3>26. &lt;base&gt; tag?</h3><p>Sets default URL for all relative links in document.</p></div>
+                <div class="question"><h3>27. contenteditable?</h3><p>Attribute that makes any element editable by user.</p></div>
+                <div class="question"><h3>28. autocomplete attribute?</h3><p>On/Off. Allows browser to suggest values for inputs.</p></div>
+                <div class="question"><h3>29. &lt;datalist&gt; tag?</h3><p>Provides autocomplete suggestions for input elements.</p></div>
+                <div class="question"><h3>30. &lt;map&gt; tag?</h3><p>Defines an image map with clickable areas.</p></div>
+                <div class="question"><h3>31. &lt;mark&gt; tag?</h3><p>Highlights text (usually yellow background).</p></div>
+                <div class="question"><h3>32. &lt;time&gt; tag?</h3><p>Represents a specific period in time (machine readable).</p></div>
+                <div class="question"><h3>33. What is Favicon?</h3><p>Small icon displayed in browser tab (linked in head).</p></div>
+                <div class="question"><h3>34. &lt;abbr&gt; tag?</h3><p>Defines abbreviation; title attr shows full text on hover.</p></div>
+                <div class="question"><h3>35. &lt;blockquote&gt; vs &lt;q&gt;?</h3><p>Blockquote for block-level quotes. Q for inline quotes.</p></div>
+                <div class="question"><h3>36. &lt;sub&gt; and &lt;sup&gt;?</h3><p>Subscript (H2O) and Superscript (X2).</p></div>
+                <div class="question"><h3>37. &lt;pre&gt; tag?</h3><p>Preserves both spaces and line breaks in text.</p></div>
+                <div class="question"><h3>38. &lt;code&gt; tag?</h3><p>Defines computer code text (monospaced font).</p></div>
+                <div class="question"><h3>39. hidden attribute?</h3><p>Global attribute that hides element (like display:none).</p></div>
+                <div class="question"><h3>40. autofocus attribute?</h3><p>Input automatically gets focus when page loads.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="css-content" class="tab-content">
+        <div class="section">
+            <h2 class="section-title">Complete CSS Properties Reference</h2>
+            <div class="search-container">
+                <input type="text" id="cssSearch" placeholder="🔍 Search CSS properties (e.g., 'flex', 'grid')...">
+            </div>
+            <div class="code-table-container">
+                <table class="code-table">
+                    <thead><tr><th>Property</th><th>Description</th><th>Type</th></tr></thead>
+                    <tbody id="cssTableBody"></tbody>
+                </table>
+            </div>
+            <p style="margin-top:10px; opacity:0.7; font-style:italic;">*Click any property above to see code & demo.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title"><i class="fas fa-comment-dots"></i> CSS Viva Voce (40 Questions)</h2>
+            <div class="questions-list">
+                <div class="question"><h3>1. What is CSS Box Model?</h3><p>Every element is a box: Content, Padding, Border, Margin.</p></div>
+                <div class="question"><h3>2. box-sizing: border-box?</h3><p>Includes padding/border in total width/height calculations.</p></div>
+                <div class="question"><h3>3. CSS Specificity?</h3><p>Inline > ID > Class > Element. !important overrides all.</p></div>
+                <div class="question"><h3>4. display:none vs visibility:hidden?</h3><p>None removes from flow. Hidden keeps space but invisible.</p></div>
+                <div class="question"><h3>5. What is z-index?</h3><p>Controls stack order of positioned elements.</p></div>
+                <div class="question"><h3>6. Reset vs Normalize?</h3><p>Reset strips all styles. Normalize makes defaults consistent.</p></div>
+                <div class="question"><h3>7. Pseudo-classes vs Elements?</h3><p>Classes (:hover) define state. Elements (::before) style parts.</p></div>
+                <div class="question"><h3>8. px vs em vs rem?</h3><p>px=absolute. em=relative to parent. rem=relative to root html.</p></div>
+                <div class="question"><h3>9. position: absolute?</h3><p>Positioned relative to nearest positioned ancestor.</p></div>
+                <div class="question"><h3>10. position: fixed?</h3><p>Positioned relative to the viewport (stays on scroll).</p></div>
+                <div class="question"><h3>11. position: sticky?</h3><p>Toggles between relative and fixed based on scroll pos.</p></div>
+                <div class="question"><h3>12. What is Flexbox?</h3><p>1D layout model for rows OR columns. Good for components.</p></div>
+                <div class="question"><h3>13. What is CSS Grid?</h3><p>2D layout model for rows AND columns. Good for page layout.</p></div>
+                <div class="question"><h3>14. Center div (Flex)?</h3><p>display:flex; justify-content:center; align-items:center;</p></div>
+                <div class="question"><h3>15. justify-content vs align-items?</h3><p>Justify=Main Axis (Row). Align=Cross Axis (Column).</p></div>
+                <div class="question"><h3>16. What is `gap`?</h3><p>Space between flex/grid items (replaces margin hacks).</p></div>
+                <div class="question"><h3>17. Mobile First Design?</h3><p>Style for mobile first, then use min-width media queries.</p></div>
+                <div class="question"><h3>18. Media Queries?</h3><p>Apply styles only if condition met (@media (max-width:700px)).</p></div>
+                <div class="question"><h3>19. CSS Variables?</h3><p>--color: red; usage: var(--color). Reusable values.</p></div>
+                <div class="question"><h3>20. opacity vs rgba alpha?</h3><p>Opacity fades element+children. RGBA fades only background.</p></div>
+                <div class="question"><h3>21. object-fit: cover?</h3><p>Image fills container, cropping excess to maintain aspect ratio.</p></div>
+                <div class="question"><h3>22. vh and vw units?</h3><p>1vh = 1% of viewport height. 1vw = 1% of viewport width.</p></div>
+                <div class="question"><h3>23. Transition vs Animation?</h3><p>Transition=A to B on trigger. Animation=Keyframes, loops, complex.</p></div>
+                <div class="question"><h3>24. transform property?</h3><p>Rotate, Scale, Skew, Translate without affecting flow.</p></div>
+                <div class="question"><h3>25. clip-path?</h3><p>Clips an element to a basic shape (circle, polygon).</p></div>
+                <div class="question"><h3>26. ::placeholder?</h3><p>Pseudo-element to style input placeholder text.</p></div>
+                <div class="question"><h3>27. pointer-events: none?</h3><p>Element ignores clicks; clicks pass through to behind.</p></div>
+                <div class="question"><h3>28. will-change?</h3><p>Performance hint to browser about upcoming changes.</p></div>
+                <div class="question"><h3>29. user-select: none?</h3><p>Prevents user from selecting/highlighting text.</p></div>
+                <div class="question"><h3>30. backdrop-filter?</h3><p>Blur/effect behind the element (Glassmorphism).</p></div>
+                <div class="question"><h3>31. calc() function?</h3><p>Performs calcs mixing units (width: calc(100% - 20px)).</p></div>
+                <div class="question"><h3>32. @font-face?</h3><p>Loads custom fonts into the webpage.</p></div>
+                <div class="question"><h3>33. outline vs border?</h3><p>Outline doesn't take space and sits outside border.</p></div>
+                <div class="question"><h3>34. currentColor?</h3><p>Variable holding the element's current text color.</p></div>
+                <div class="question"><h3>35. flex-grow?</h3><p>How much a flex item grows relative to others.</p></div>
+                <div class="question"><h3>36. flex-shrink?</h3><p>How much a flex item shrinks if space is limited.</p></div>
+                <div class="question"><h3>37. :nth-child()?</h3><p>Selects elements based on their index (odd, even, 3n).</p></div>
+                <div class="question"><h3>38. :not() selector?</h3><p>Selects elements that do NOT match criteria.</p></div>
+                <div class="question"><h3>39. > vs space selector?</h3><p>> is direct child. Space is any descendant.</p></div>
+                <div class="question"><h3>40. float and clearfix?</h3><p>Float pushes element side. Clearfix fixes parent collapse.</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tag-modal" id="tagModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3 id="modalTitle">Example</h3>
+            <button class="close-modal" id="closeModal">&times;</button>
+        </div>
+        <div class="modal-body">
+            <h4>Code:</h4>
+            <div class="code-example"><pre><code id="codeExample" class="language-html"></code></pre></div>
+            <h4>Preview:</h4>
+            <div class="output-preview" id="outputPreview"></div>
+            <h4 style="margin-top:1rem;">Explanation:</h4>
+            <p id="tagExplanation"></p>
+        </div>
+    </div>
+</div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>HTML & CSS Learning - By KP</h3>
+            <p>A comprehensive platform with detailed tutorials, interactive examples, and extensive learning resources for fundamentals. More languages coming soon.</p>
+            <p style="margin-top: 1.5rem; font-size: 0.9rem; opacity: 0.8;">© 2026 Kavya Pratap Singh</p>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
